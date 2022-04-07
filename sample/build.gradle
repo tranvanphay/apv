@@ -1,23 +1,21 @@
 buildscript {
     repositories {
         google()
-        jcenter()
     }
 }
 
 repositories {
     google()
-    jcenter()
 }
 
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 31
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 3
         versionName "3.0.0"
         javaCompileOptions {
@@ -31,11 +29,41 @@ android {
 
 }
 
+//def githubProperties = new Properties() githubProperties.load(new FileInputStream(rootProject.file('github.properties')))
+repositories {
+    maven {
+        name = "apv"
+        /*  Configure path to the library hosted on GitHub Packages Registry
+         *  Replace UserID with package owner userID and REPOSITORY with the repository name
+         *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"*/
+
+        url = uri("https://maven.pkg.github.com/tranvanphay/apv")
+        credentials {
+            /** Create github.properties in root project folder file with
+             ** gpr.usr=GITHUB_USER_ID & gpr.key=PERSONAL_ACCESS_TOKEN
+             ** Or set env variable GPR_USER & GPR_API_KEY if not adding a properties file**/
+
+            username = 'tranvanphay'
+            password = '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'
+        }
+    }
+}
+
 dependencies {
-    implementation project(':pdfviewer')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation project(':pdfviewer')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation 'org.androidannotations:androidannotations-api:4.6.0'
     annotationProcessor "org.androidannotations:androidannotations:4.6.0"
     implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'com.github.tranvanphay:pdfviewer:1.0.1'
+    api 'com.github.barteksc:pdfium-android:1.9.0'
+
+
 }

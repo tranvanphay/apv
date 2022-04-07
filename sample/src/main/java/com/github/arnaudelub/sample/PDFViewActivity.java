@@ -32,13 +32,13 @@ import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.github.arnaudelub.pdfviewer.PDFView;
-import com.github.arnaudelub.pdfviewer.listener.OnLoadCompleteListener;
-import com.github.arnaudelub.pdfviewer.listener.OnPageChangeListener;
-import com.github.arnaudelub.pdfviewer.listener.OnPageErrorListener;
-import com.github.arnaudelub.pdfviewer.listener.OnZoomChangeListener;
-import com.github.arnaudelub.pdfviewer.scroll.DefaultScrollHandle;
-import com.github.arnaudelub.pdfviewer.util.FitPolicy;
+import com.github.tranvanphay.pdfviewer.PDFView;
+import com.github.tranvanphay.pdfviewer.listener.OnLoadCompleteListener;
+import com.github.tranvanphay.pdfviewer.listener.OnPageChangeListener;
+import com.github.tranvanphay.pdfviewer.listener.OnPageErrorListener;
+import com.github.tranvanphay.pdfviewer.listener.OnZoomChangeListener;
+import com.github.tranvanphay.pdfviewer.scroll.DefaultScrollHandle;
+import com.github.tranvanphay.pdfviewer.util.FitPolicy;
 import com.shockwave.pdfium.PdfDocument;
 
 import org.androidannotations.annotations.AfterViews;

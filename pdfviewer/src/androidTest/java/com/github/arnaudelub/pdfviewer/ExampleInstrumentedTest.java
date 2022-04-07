@@ -1,4 +1,4 @@
-package com.github.arnaudelub.pdfviewer;
+package com.github.tranvanphay.pdfviewer;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.github.arnaudelub.pdfviewer.test", appContext.getPackageName());
+        assertEquals("com.github.tranvanphay.pdfviewer.test", appContext.getPackageName());
     }
 }

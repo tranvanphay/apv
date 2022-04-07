@@ -5,9 +5,9 @@
 5    android:versionName="3.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="14"
+8        android:minSdkVersion="21"
 8-->C:\Users\PC\Desktop\apv\sample\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="28" />
+9        android:targetSdkVersion="31" />
 9-->C:\Users\PC\Desktop\apv\sample\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -17,7 +17,7 @@
 13    <application
 13-->C:\Users\PC\Desktop\apv\sample\src\main\AndroidManifest.xml:6:2-18:16
 14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-14-->[androidx.core:core:1.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\ed8a92f2d2f336db88955cb17589d154\core-1.1.0\AndroidManifest.xml:24:18-86
+14-->[androidx.core:core:1.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\f71f8da7ba118f56b7a69563a8255a28\core-1.1.0\AndroidManifest.xml:24:18-86
 15        android:debuggable="true"
 16        android:icon="@drawable/ic_launcher"
 16-->C:\Users\PC\Desktop\apv\sample\src\main\AndroidManifest.xml:7:3-39
